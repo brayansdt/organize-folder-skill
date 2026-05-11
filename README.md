@@ -12,8 +12,9 @@ A Claude Code skill that turns a cluttered Downloads or Documents folder into a 
 
 ## Install
 
-```
-/plugins add github:<your-username>/organize-folder-skill
+```bash
+claude plugin marketplace add brayansdt/organize-folder-skill
+claude plugin install organize-folder@organize-folder-skill
 ```
 
 Then in any Claude Code session:
