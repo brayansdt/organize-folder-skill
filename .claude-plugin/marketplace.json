@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "organize-folder-skill",
+  "description": "Organizes messy Downloads or Documents folders into clean, documented structures using a 5-phase workflow.",
+  "owner": {
+    "name": "Brayan Dichtl",
+    "url": "https://github.com/brayansdt"
+  },
+  "plugins": [
+    {
+      "name": "organize-folder",
+      "description": "Organize a messy folder. Scans contents, asks targeted questions, proposes a clean structure, executes, and writes a CLAUDE.md.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
