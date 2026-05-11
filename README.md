@@ -1,6 +1,6 @@
 # organize-folder
 
-A Claude Code skill that turns a cluttered Downloads or Documents folder into a clean, documented structure — without moving a single file until you approve.
+A skill that turns a cluttered Downloads or Documents folder into a clean, documented structure — without moving a single file until you approve.
 
 ## What it does
 
@@ -12,20 +12,40 @@ A Claude Code skill that turns a cluttered Downloads or Documents folder into a 
 
 ## Install
 
-| Agent | Command |
-|-------|---------|
-| **Claude Code** | `claude plugin marketplace add brayansdt/organize-folder-skill && claude plugin install organize-folder@organize-folder-skill` |
-| **Gemini CLI** | `gemini extensions install https://github.com/brayansdt/organize-folder-skill` |
-| **Codex / OpenClaw** | Clone repo → place `AGENTS.md` in your project root, or add `@./SKILL.md` to your existing `AGENTS.md` |
-| **Cursor / Windsurf / Cline / Copilot** | `npx skills add brayansdt/organize-folder-skill` |
+### Claude Code
+```bash
+claude plugin marketplace add brayansdt/organize-folder-skill
+claude plugin install organize-folder@organize-folder-skill
+```
 
-Then in any Claude Code session:
+### Gemini CLI
+```bash
+gemini extensions install https://github.com/brayansdt/organize-folder-skill
+```
+
+### Codex / OpenClaw
+```bash
+git clone https://github.com/brayansdt/organize-folder-skill
+```
+Then add to your project's `AGENTS.md`:
+```
+@./organize-folder-skill/SKILL.md
+```
+
+### Cursor / Windsurf / Cline / Copilot
+```bash
+npx skills add brayansdt/organize-folder-skill
+```
+
+---
+
+Once installed, just say:
 
 > "organize my Downloads"  
 > "my Documents folder is a mess"  
 > "help me sort this folder"
 
-Claude will invoke the skill automatically.
+The skill triggers automatically.
 
 ## Example output structure
 
@@ -64,5 +84,5 @@ The structure is always tailored to what's actually in your folder — not a tem
 
 ## Requirements
 
-- Claude Code
+- Any AI coding agent (Claude Code, Gemini CLI, Codex, Cursor, Windsurf, Cline, Copilot)
 - macOS, Linux, or Windows (uses `mv` and `ls`)
