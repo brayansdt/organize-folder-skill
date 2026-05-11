@@ -12,10 +12,12 @@ A Claude Code skill that turns a cluttered Downloads or Documents folder into a 
 
 ## Install
 
-```bash
-claude plugin marketplace add brayansdt/organize-folder-skill
-claude plugin install organize-folder@organize-folder-skill
-```
+| Agent | Command |
+|-------|---------|
+| **Claude Code** | `claude plugin marketplace add brayansdt/organize-folder-skill && claude plugin install organize-folder@organize-folder-skill` |
+| **Gemini CLI** | `gemini extensions install https://github.com/brayansdt/organize-folder-skill` |
+| **Codex / OpenClaw** | Clone repo → place `AGENTS.md` in your project root, or add `@./SKILL.md` to your existing `AGENTS.md` |
+| **Cursor / Windsurf / Cline / Copilot** | `npx skills add brayansdt/organize-folder-skill` |
 
 Then in any Claude Code session:
 

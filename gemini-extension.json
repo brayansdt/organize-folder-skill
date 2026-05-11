@@ -1,0 +1,6 @@
+{
+  "name": "organize-folder",
+  "description": "Organizes messy Downloads or Documents folders into clean, documented structures using a 5-phase workflow.",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md"
+}
